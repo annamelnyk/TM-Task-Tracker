@@ -1,7 +1,8 @@
+<app-create-task onAddTask="addNewTask($event)"></app-create-task>
 <div class="tasks-container">
   <h2 *ngIf="isTaskCollectionEmpty()">No tasks are remaining</h2>
   <ul class="tasks-list" *ngIf="!isTaskCollectionEmpty()">
-    <app-task 
+    <app-task
       *ngFor="let task of tasks"
       [task]="task"
       (onDelete)="deleteTaskHandler(task)"

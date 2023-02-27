@@ -28,4 +28,8 @@ export class TaskService {
       return t;
     })
   }
+
+  createTask(task: Task): void {
+    this.tasks = [...this.tasks, task];
+  }
 }
