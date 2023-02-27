@@ -1,0 +1,17 @@
+<li 
+  class="list-item"
+  [ngClass]="task.reminder ? 'reminder' : ''"
+  (dblclick)="toggleReminder(task)"
+>
+  <div>
+    <p class="text">{{ task.text }}</p>
+    <p>{{ task.day }}</p>
+  </div>
+  <div>
+    <fa-icon 
+      [icon]="faTrashCan"
+      [ngStyle]="{color: 'darkred'}"
+      (click)="deleteTask(task)"
+    ></fa-icon>
+  </div>
+</li>

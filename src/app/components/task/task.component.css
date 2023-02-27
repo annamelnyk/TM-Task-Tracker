@@ -1,0 +1,23 @@
+.list-item {
+  list-style: none;
+  text-align: left;
+  font-size: 18px;
+  font-style: italic;
+  padding: 10px 15px;
+  background-color: rgb(226, 243, 226);
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-item.reminder {
+  border-left: 6px solid darkgreen;
+}
+
+.text {
+  font-weight: bold;
+}
+
+
